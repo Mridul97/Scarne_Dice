@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.dicegame.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/userTurnScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Turn Score : 0" />
+
+        <TextView
+            android:id="@+id/userOverallScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="User Overall Score : 0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/computerTurnScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer Turn Score : 0" />
+
+        <TextView
+            android:id="@+id/computerOverallScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Computer Overall Score : 0" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/dice1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/rollid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="userRoll"
+            android:text="ROLL" />
+
+        <Button
+            android:id="@+id/holdid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:onClick="hold"
+            android:text="HOLD" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="reset"
+            android:text="RESET" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
